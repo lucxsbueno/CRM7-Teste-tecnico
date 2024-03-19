@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 config();
 
 const mongoDomain = process.env.mongoDB;
+
 export async function mongoSetup() {
   try {
     await mongoose.connect(mongoDomain);

@@ -10,10 +10,7 @@ const accountSchema = new mongoose.Schema({
   dataCriacao: {
     type: Date,
     default: Date.now,
-  }
+  },
 });
 
-export const AccountSchema = new mongoose.model(
-  "accounts",
-  accountSchema
-);
+export const AccountSchema = new mongoose.model("accounts", accountSchema);
