@@ -13,6 +13,10 @@ export class RepositoryAccount {
     return await AccountSchema.findOne({ _id: id });
   }
 
+  async update({ id, nome, cnpj }) {
+    return await AccountSchema.updateOne({ _id: id }, { nome, cnpj });
+  }
+
   async findAll() {
     return await AccountSchema.find();
   }
